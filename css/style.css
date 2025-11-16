@@ -614,7 +614,7 @@ fill: var(--white);
     left: 0;
     width: 100%;
     min-height: 100%;
-    z-index: 999;
+   z-index: 9999;
     display: flex;
     justify-content: center;    
     align-items: center;
@@ -625,7 +625,6 @@ fill: var(--white);
                 visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;

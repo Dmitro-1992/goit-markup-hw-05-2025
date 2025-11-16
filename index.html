@@ -52,8 +52,7 @@
 <section class="hero">
 <div class="container container-hero">
   <h1 class="hero-title">Effective Solutions for Your Business</h1>
-<button type="button" class="hero-button" style="cursor: pointer;">Order Service</button>
-
+<button type="button" class="hero-button" style="cursor: pointer;" data-modal-open>Order Service</button>
 </div>
 </section>
 <!-- #endregion hero -->
@@ -442,7 +441,7 @@ Social media
 </footer>
 <!-- #endregion footer -->
 <!-- #region popup   -->
-     <div class="backdrop is-open">
+     <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
             <svg class="modal-icon-close" width="8" height="8">
@@ -506,6 +505,7 @@ Social media
       </div>
     </div> 
    <!-- #endregion popap   -->
+       <script src="./js/modal.js"></script>
   </body>
  
 </html>

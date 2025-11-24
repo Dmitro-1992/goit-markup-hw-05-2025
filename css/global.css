@@ -1,0 +1,94 @@
+.hidden {
+    display: none;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* #region stail */
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body{
+max-height: 100%;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* margin-top: 0;
+    margin-bottom: 0; */
+
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--slate);
+    background-color: var(--white);
+    font-weight: 400;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+/* вбирае підкреслення з поселань */
+a {
+    text-decoration: none;
+    /* color: inherit; */
+    font-style: normal;
+}
+
+h2,
+h3 {
+    color: var(--navy-blue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* #endregion stail */

@@ -13,7 +13,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-     
+   
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -44,7 +44,75 @@
   </li>
 </ul>
 </address>
+<button type="button" class="burger-button" style="cursor: pointer;" data-menu-open>
+  <svg class="burger-icon" width="24" height="24">
+    <use href="./images/icons.svg#icon-burger"></use>
+  </svg>
+</button>
 </div>
+    <div class="mobile-menu" data-menu>
+  <div class="container mobile-menu-container">
+  <button type="button" class="mobile-button-close" data-menu-close>
+      <svg class="mobile-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+  </button>
+  <nav class="mobile-nav">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+    <a href="./index.html" class="mobile-nav-link current">Studio</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="" class="mobile-nav-link">Portfolio</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="" class="mobile-nav-link">Contacts</a>
+      </li>
+    </ul>
+      </nav>
+      
+      <address class="mobile-contacts">
+      <ul class="mobile-contacts-list">
+      <li class="mobile-contacts-item">
+          <a href="tel:+110001111111" class="mobile-contacts-link current">+11 (000) 111-11-11</a> 
+        </li>
+        <li class="mobile-contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts-link">info@devstudio.com</a>
+          </li>
+        </ul>
+          </address>
+           <ul class="mobile-social-networks-list">
+          <li class="social-networks-item">
+            <a class="social-networks-link" href="">
+                <svg class="social-networks-name" width="24" height="24"> 
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="social-networks-item">
+            <a class="social-networks-link" href="">
+                <svg class="social-networks-name" width="24" height="24"> 
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="social-networks-item">
+            <a class="social-networks-link" href="">
+              <svg class="social-networks-name" width="24" height="24"> 
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="social-networks-item">
+            <a class="social-networks-link" href="">
+                <svg class="social-networks-name" width="24" height="24"> 
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+        </div>
+    </div>
 </header>
 <!-- #endregion header -->
 <main>
@@ -60,7 +128,7 @@
 
 <!-- #region our-advantages -->
 <section class="advantages">
-<div class="container">
+<div class="container advantages-container">
           <h2 class="our-advantages-title title visually-hidden" >Our Advantages</h2>
 <ul class="advantages-list">
   <li class="advantages-item">
@@ -117,7 +185,7 @@
 </section>
 <!-- #endregion our-advantages -->
 <!-- #region team --> 
-<section class="team">
+<section class="team hidden ">
 <div class="container team-container">
           <h2 class="our-team title">Our Team</h2>
 <ul class="team-list">
@@ -291,7 +359,7 @@
 <!-- #endregion team -->
 
 <!-- #region Our Portfolio -->
-<section class="our-portfolio-section">
+<section class="our-portfolio-section hidden ">
 <div class="container">
       <h2 class="our-portfolio title">Our Portfolio</h2>
 <ul class="portfolio-list">
@@ -380,25 +448,25 @@
 </main>
 <!-- #region footer -->
 
-<footer class="footer">
+<footer class="footer hidden ">
     <div class="container footer-container">
     <div class="footer-logo">
-    <a href="./index.html" class="logo  footer-logo">Web<span class="footer-studio">Studio</span></a>
-    <p class="footer-text">
-    Increase the flow of customers and sales for your business with digital
-    marketing & growth solutions.
-    </p>
+       <a href="./index.html" class="logo  footer-logo">Web<span class="footer-studio">Studio</span></a>
+      <p class="footer-text">
+         Increase the flow of customers and sales for your business with digital
+          marketing & growth solutions.
+       </p>
     </div>
-    <div class="footer-icons">
-    <p class="footer-text-icons">
-    Social media
-    </p>
-<ul class="social-networks-list">
-  <li class="social-networks-item">
-    <a class="social-networks-link" href="">
-        <svg class="social-networks-name" width="24" height="24"> 
-      <use href="./images/icons.svg#icon-instagram"></use>
-    </svg>
+   <div class="footer-icons">
+   <p class="footer-text-icons">
+       Social media
+       </p>
+         <ul class="social-networks-list">
+           <li class="social-networks-item">
+            <a class="social-networks-link" href="">
+           <svg class="social-networks-name" width="24" height="24"> 
+         <use href="./images/icons.svg#icon-instagram"></use>
+       </svg>
     </a>
   </li>
   <li class="social-networks-item">
@@ -442,7 +510,7 @@
 </footer>
 <!-- #endregion footer -->
 <!-- #region popup   -->
-     <div class="backdrop" data-modal>
+     <div class="backdrop hidden " data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
             <svg class="modal-icon-close" width="8" height="8">
@@ -485,9 +553,7 @@
           <label class="modal-form-label" for="user-comment">Comment</label>
           <textarea class="modal-form-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
    </div>
-  x
-
-<div class="form-field-wrapper-checkbox">
+ <div class="form-field-wrapper-checkbox">
         <input class="modal-input-checkbox visually-hidden" type="checkbox"
                name="user-privacy" id="user-privacy"  value="true" required />
     <label class="modal-label-checkbox" for="user-privacy">
@@ -508,6 +574,7 @@
     </div> 
    <!-- #endregion popap   -->
        <script src="./js/modal.js"></script>
+              <script src="./js/menu.js"></script>
   </body>
  
 </html>

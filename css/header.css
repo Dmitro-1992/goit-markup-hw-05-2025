@@ -1,0 +1,197 @@
+/* #region header */
+
+.page-header {
+
+    border-bottom: solid 1px #E7E9FC;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background-color: #fff;
+    margin: 0 auto;
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-list,
+.contacts {
+    display: none;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--iris);
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.header-logo .logo-studio {
+    color: var(--navy-blue);
+}
+
+.header-logo {
+    padding: 16px 0;
+    display: block;
+
+}
+
+.burger-button {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    /* background-color: transparent;-прозорий */
+}
+
+.burger-icon {
+    fill: var(--burger);
+    fill: #2e2f42;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+    .contacts {
+        font-style: normal;
+        display: block;
+        /* display: block; чтоби появились контакти */
+
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+        /* можна використовувати margin-right: 40px для тега li у класі,
+    для останього li використовуємо margin-right: 0 для обнулення відступів) */
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo {
+        padding: 24px 0;
+        margin-right: 120px;
+    }
+
+    .header-logo .logo-studio {
+        color: var(--navy-blue);
+    }
+
+    * .nav-link {
+        position: relative;
+        display: block;
+        color: var(--ocean);
+        justify-content: center;
+        padding: 24px 0 24px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--navy-blue);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link.current {
+        color: var(--ocean);
+    }
+
+    .nav-link.current {
+        color: var(--ocean);
+        position: relative;
+        justify-content: center;
+
+    }
+
+    .nav-link:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--ocean);
+        opacity: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link:hover:after,
+    .nav-link:focus:after,
+    .nav-link.current::after {
+        opacity: 1;
+    }
+
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    .contacts-link {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--slate);
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .contacts-link:hover,
+    .contacts-link:focus {
+        color: var(--ocean);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .header-logo {
+        margin-right: 76px;
+    }
+
+    .contacts-list {
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+        /* margin-right: 0; */
+    }
+
+    .contacts-link {
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--slate);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+
+}
+/* #endregion header */
